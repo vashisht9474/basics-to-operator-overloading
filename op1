@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+class test{
+int a,b;
+public:
+void get_var(int x,int y)
+{ a=x;
+b=y;
+}
+void display()
+{
+cout<<a<<endl;
+cout<<b<<endl;
+}
+void operator -(){
+x=-a;
+y=-b;
+}
+};
+
+int main()
+{
+test t1;
+t1.get_var(10,-20);
+t1.operator-();
+t1.display();
+return 0;
+
